@@ -52,7 +52,7 @@ We provide the training code for D$`^3`$Net (used in our paper). You could impro
    If you want to train our model, you can use the following command:
 
    ```
-   CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 train.py --epoch 0 --n_epochs 2000 --train_datasets your_Datasets --model_folder your_model_folder
+   CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 train.py --epoch 0 --n_epochs 1200 --train_datasets your_Datasets --model_folder your_model_folder
    ```
 
    You also can refer to more arguments in `tran.py` to modify the training command according to your needs. In addition, we default to training under five image degradation conditions. If you want to add more image degradations, please modify `utils/dataloader.py`.
